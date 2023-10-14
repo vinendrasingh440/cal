@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 400px;
+            height: 200px;
+            background-color:red;
+            padding-top: 30px;
+
+        }
+        .p{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p1{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p2{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p3{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p4{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p5{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p6{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p7{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p8{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p9{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p10{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p11{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p12{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p13{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p14{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+        .p15{
+            width: 40px;
+            height: 30px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="box">
+    <form name="text1"> 
+        <input name="text" type="text">
+    </form>
+    <table>
+        <tr>
+            <td><input type="button" class="p" value="+" onclick="insert('+')"></td>
+            <td ><input type="button" class="p1"value="-" onclick="insert('+')"> </td>
+            <td> <input type="button" class="p2"value="*" onclick="insert('+')"></td>
+            <td><input type="button" class="p3"value="/" onclick="insert('/')"></td>
+            <tr>
+            <td><input type="button" class="p4"value="7" onclick="insert('7')"></td>
+            <td><input type="button" class="p5"value="8" onclick="insert('8')"></td>
+            <td><input type="button" class="p6"value="9" onclick="insert('9')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="p7"value="4" onclick="insert('4')"></td>
+            <td><input type="button" class="p8"value="5" onclick="insert('5')"></td>
+            <td><input type="button" class="p9"value="6" onclick="insert('6')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="p10"value="1" onclick="insert('1')"></td>
+            <td><input type="button" class="p11"value="2" onclick="insert('2')"></td>
+            <td><input type="button" class="p12"value="3" onclick="insert('3')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="p13"value="0" onclick="insert('0')"></td>
+            <td><input type="button" class="p14"value="." onclick="insert('.')"></td>
+            <td><input type="button" class="p15"value="=" onclick=equal()></td>
+        </tr>
+        </tr>
+    </table>
+</div>
+</div>
+</center>
+<script>
+    function insert(n){
+       document.text1.text.value =  document.text1.text.value + n; 
+    }
+    function equal(){
+        var a = document.text1.text.value;
+        document.text1.text.value= eval(a)
+    }
+</script>
+</body>
+</html>
